@@ -1,62 +1,70 @@
-# McKay's Movies
-## Initial Concept
-This website will provide users with a list of movies and TV series that are currently owned by McKay. 
+# Getting Started with Create React App
 
-These are movies and TV series that have been accumulated over the years and are located on VUDU and Apple TV. 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-You will need to contact McKay to get the login information to access the movies, but anyone can use the website to see which movies are available for viewing.
+## Available Scripts
 
-## Usage
-Anyone can access the website via the url: 
+In the project directory, you can run:
 
-The website will display a list of movies and TV series available for viewing
-## Ideas to Implement
-- Search bar
-- Filter option => filter by name, rating, year, genre, runtime, etc.
-- Random button => displays a random movie for the user to watch
-- Movie list with alternating views in list or grid view
-- Each movie card will have the following information:
-  - Movie title with Artwork
-  - Rating
-  - Year
-  - Genre
-  - Runtime
-  - Main actors
+### `yarn start`
 
-(When clicking on the movie it will load the page which includes more information)
-  - Movie title with Artwork
-  - Rating
-  - Year
-  - Genre
-  - Runtime
-  - Main actors
-  - Synopsis
-  - IMDB link
-  - IMDB parental guide
-  - Trailer from YouTube
-  - Link to watch movie on VUDU or Apple TV
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-More ideas, login required
-- Add to a list of movies you want to watch, login required
-  - This list can be accessed in the user profile
-  - Option to search and press a plus button to add to the watch later list
-  - Organizing the list in the order the user wants to watch the movies
-  - Checkbox function for when a user has watched a movie, keeping the movie on the list or removing it
-    - Creating a list of movies they want to watch even if it is not on the master list (That may be difficult because I would need to source an API to get a list of all movies ever)
-  - Creating multiple lists (Star Wars, Disney, Horror, 2015, etc.)
-- Personal star ratings which can be another option to sort with, login required
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Future Ideas
-- Submission form for users who want to put a movie on the buy later list. This will create a list for the admin to see what movies people are interested in.
+### `yarn test`
 
-Admin Ideas
-- Page to add new movies to list
-  - Field for movie name, artwork jpg, rating, year, genre, runtime, IMDB links, YouTube links, etc.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Concept Work
+### `yarn build`
 
-## Authors and acknowledgment
-I, McKay Fackrell am the original creator of the code.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## License
-Please refer to the LICENSE in the repo.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `yarn eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
