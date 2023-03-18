@@ -12,7 +12,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       await signUp(email, password);
-      navigate('/')
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -40,6 +40,7 @@ const Signup = () => {
                   className="p-3 my-2 bg-gray-700 rounded"
                   type="email"
                   placeholder="email"
+                  autoComplete="email"
                   required
                 />
                 <input
@@ -47,6 +48,7 @@ const Signup = () => {
                   className="p-3 my-2 bg-gray-700 rounded"
                   type="password"
                   placeholder="password"
+                  autoComplete="current-password"
                   required
                 />
                 <button className="bg-blue-600 py-3 my-6 rounded font-bold">

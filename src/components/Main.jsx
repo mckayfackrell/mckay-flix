@@ -9,7 +9,7 @@ const Main = () => {
   // const instead of let before
   const movie = movies[Math.floor(Math.random() * movies.length)];
 
-  // this while statement wasn't present
+  // TODO:this while statement wasn't present
 
   // if a movie is "undefined" it will not be shown in the main backdrop screen
   // while (!movie) {
