@@ -7,14 +7,14 @@ const Main = () => {
   const [showFullText, setShowFullText] = useState(false);
 
   // const instead of let before
-  let movie = movies[Math.floor(Math.random() * movies.length)];
+  const movie = movies[Math.floor(Math.random() * movies.length)];
 
   // this while statement wasn't present
-  
+
   // if a movie is "undefined" it will not be shown in the main backdrop screen
-  while (!movie) {
-    movie = movies[Math.floor(Math.random() * movies.length)];
-  }
+  // while (!movie) {
+  //   movie = movies[Math.floor(Math.random() * movies.length)];
+  // }
 
   useEffect(() => {
     axios.get(requests.requestList).then((response) => {
