@@ -6,7 +6,15 @@ const Main = () => {
   const [movies, setMovies] = useState([]);
   const [showFullText, setShowFullText] = useState(false);
 
-  const movie = movies[Math.floor(Math.random() * movies.length)];
+  // const instead of let before
+  let movie = movies[Math.floor(Math.random() * movies.length)];
+
+  // this while statement wasn't present
+  
+  // if a movie is "undefined" it will not be shown in the main backdrop screen
+  while (!movie) {
+    movie = movies[Math.floor(Math.random() * movies.length)];
+  }
 
   useEffect(() => {
     axios.get(requests.requestList).then((response) => {
@@ -44,6 +52,18 @@ const Main = () => {
             <button className="border text-white border-gray-300 py-2 px-5 ml-4">
               Watch Later
             </button>
+            <a
+              href={`https://www.google.com/search?q=${movie?.title}+apple+tv+movie`}
+              className="border text-white border-gray-300 py-2 px-5 ml-4"
+            >
+              Apple TV
+            </a>
+            <a
+              href={`https://www.vudu.com/content/movies/search?minVisible=0&returnUrl=%252Fcontent%252Fmovies%252Fhome&searchString=${movie?.title}`}
+              className="border text-white border-gray-300 py-2 px-5 ml-4"
+            >
+              VUDU
+            </a>
           </div>
           <p className="text-gray-400 text-sm">
             Released:{" "}
