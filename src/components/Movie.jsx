@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaHeart, FaRegHeart } from "react-icons/fa";
+import { HiClock, HiOutlineClock } from "react-icons/hi";
 import { UserAuth } from "../context/AuthContext";
 import { db } from "../firebase";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
@@ -41,9 +41,9 @@ const Movie = ({ item }) => {
         </p>
         <p onClick={saveShow}>
           {like ? (
-            <FaHeart className="absolute top-4 left-4 text-gray-300" />
+            <HiClock className="absolute top-4 left-4 text-gray-300" />
           ) : (
-            <FaRegHeart className="absolute top-4 left-4 text-gray-300" />
+            <HiOutlineClock className="absolute top-4 left-4 text-gray-300" />
           )}
         </p>
       </div>

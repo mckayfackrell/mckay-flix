@@ -30,7 +30,7 @@ const AdminMovie = () => {
       />
       <div className="bg-black/60 fixed top-0 left-0 w-full h-screen"></div>
       <div className="fixed w-full px-4 py-24 z-50">
-        <div className="max-w-[450px] h-[600px] mx-auto bg-black/75 text-white">
+        <div className="max-w-[450px] h-[700px] mx-auto bg-black/75 text-white">
           <div className="max-w-[320px] mx-auto py-16">
             <h1 className="text-3xl font-bold">Add New Movie</h1>
             {error ? <p className="p-3 bg-red-400 my-2">{error}</p> : null}
@@ -77,11 +77,17 @@ const AdminMovie = () => {
                 type="apple_link"
                 placeholder="Apple Link"
               />
+             <input
+                onChange={(e) => setPassword(e.target.value)}
+                className="p-3 my-2 bg-gray-700 rounded"
+                type="imdb_link"
+                placeholder="IMDB Link"
+              />
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 className="p-3 my-2 bg-gray-700 rounded"
-                type="series_name"
-                placeholder="IMDB Link"
+                type="movie_id"
+                placeholder="TMDB ID"
               />
               <button className="bg-blue-600 py-3 my-6 rounded font-bold">
                 Create

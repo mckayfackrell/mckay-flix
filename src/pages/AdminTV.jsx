@@ -60,8 +60,14 @@ const AdminTV = () => {
               <input
                 onChange={(e) => setPassword(e.target.value)}
                 className="p-3 my-2 bg-gray-700 rounded"
-                type="series_name"
+                type="imdb_link"
                 placeholder="IMDB Link"
+              />
+              <input
+                onChange={(e) => setPassword(e.target.value)}
+                className="p-3 my-2 bg-gray-700 rounded"
+                type="tv_id"
+                placeholder="TMDB ID"
               />
               <button className="bg-blue-600 py-3 my-6 rounded font-bold">
                 Create
