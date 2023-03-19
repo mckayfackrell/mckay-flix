@@ -76,7 +76,8 @@ const Main = () => {
 
           <p
             className="w-full md:max-w-[70%] lg:max-w-[50%] xl:max-w-[35%] text-gray-200"
-            onClick={toggleFullText}
+            // onClick={toggleFullText}
+            // TODO: right now it is just the'...' but if you unblock this it will load up the entire prompt but also refresh the page, so I want prevent default but it isn't working
           >
             {truncateString(movie?.overview, 150)}
             {showFullText && truncateString(movie?.overview.slice(150), 999999)}

@@ -23,6 +23,12 @@ const Navbar = () => {
           MCKAYFLIX
         </h1>
       </Link>
+
+      {/* Link to all movies pages */}
+      <Link to="/allmovies">
+        <button className="text-white pr-4">All Movies</button>
+      </Link>
+
       {user?.email ? (
         <div>
           <Link to="/account">
