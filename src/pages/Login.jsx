@@ -37,7 +37,7 @@ const Login = () => {
             <form onSubmit={handleSubmit} className="w-full flex flex-col py-4">
               <input
                 onChange={(e) => setEmail(e.target.value)}
-                className="p-3 my-2 bg-gray-700 rouded"
+                className="p-3 my-2 bg-gray-700 rounded"
                 type="email"
                 placeholder="Email"
                 autoComplete="email"
@@ -45,7 +45,7 @@ const Login = () => {
               />
               <input
                 onChange={(e) => setPassword(e.target.value)}
-                className="p-3 my-2 bg-gray-700 rouded"
+                className="p-3 my-2 bg-gray-700 rounded"
                 type="password"
                 placeholder="Password"
                 autoComplete="current-password"

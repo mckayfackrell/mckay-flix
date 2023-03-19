@@ -1,7 +1,6 @@
 {
   "name": "mckay-movies",
   "version": "0.1.0",
-  "homepage": "https://mckayfackrell.github.io/mckayflix/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -9,7 +8,6 @@
     "@testing-library/user-event": "^13.2.1",
     "axios": "^0.27.2",
     "firebase": "^9.18.0",
-    "gh-pages": "^4.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
