@@ -25,7 +25,7 @@ const Navbar = () => {
       </Link>
 
       {/* Link to all movies pages */}
-      <Link to="/allmovies">
+      <Link to="/all_movies">
         <button className="text-white pr-4">All Movies</button>
       </Link>
 
