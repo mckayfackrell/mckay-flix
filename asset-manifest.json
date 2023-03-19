@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/mckayflix/static/css/main.7ad72137.css",
+    "main.js": "/mckayflix/static/js/main.bf00b80a.js",
+    "index.html": "/mckayflix/index.html",
+    "main.7ad72137.css.map": "/mckayflix/static/css/main.7ad72137.css.map",
+    "main.bf00b80a.js.map": "/mckayflix/static/js/main.bf00b80a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ad72137.css",
+    "static/js/main.bf00b80a.js"
+  ]
+}
