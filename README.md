@@ -6,6 +6,11 @@ These are movies and TV series that have been accumulated over the years and are
 
 You will need to contact McKay to get the login information to access the movies, but anyone can use the website to see which movies are available for viewing.
 
+## Images
+| Homepage | Sign Up |
+|---------|---------|
+| ![home](https://user-images.githubusercontent.com/110206514/226149400-767071b6-b846-4621-be8a-2ea4eed760a0.jpg)|  ![signup](https://user-images.githubusercontent.com/110206514/226149397-fca9f097-7757-47c6-95c9-b2b9f0fb3ae0.jpg)|
+
 ## Usage
 Anyone can access the website via the url: 
 
