@@ -46,41 +46,41 @@ const Movie = ({ item }) => {
   }, [id]);
 
   return (
-    <div className="w-full h-[550px] text-white">
+    <div className="w-full h-[250px] md:h-[550px] text-white">
       <div className="w-full h-full">
-        <div className="absolute w-full h-[550px] bg-gradient-to-r from-black"></div>
+        <div className="absolute w-full h-[250px] md:h-[550px] bg-gradient-to-r from-black"></div>
         <img
           className="w-full h-full object-cover"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
         <div className="absolute w-full top-[20%] p-4 md:p-8">
-          <h1 className="text-3xl md:text-5xl font-bold">{movie?.title}</h1>
+          <h1 className="text-xl md:text-5xl font-bold">{movie?.title}</h1>
           <div className="py-4 flex items-center">
             <p className="mr-4" onClick={saveShow}>
               {like ? (
-                <HiClock className="text-gray-300 text-3xl" />
+                <HiClock className="text-gray-300 text-2xl md:text-3xl" />
               ) : (
-                <HiOutlineClock className="text-gray-300 text-3xl" />
+                <HiOutlineClock className="text-gray-300 text-2xl md:text-3xl" />
               )}
             </p>
             <a
               href={`https://www.google.com/search?q=${movie?.title}+apple+tv+movie`}
-              className="border text-white border-gray-300 py-2 px-5 mr-4"
+              className="border text-white border-gray-300 py-2 px-3 md:px-5 mr-4 text-sm md:text-xl"
             >
               Apple TV
             </a>
             <a
               href={`https://www.vudu.com/content/movies/search?minVisible=0&returnUrl=%252Fcontent%252Fmovies%252Fhome&searchString=${movie?.title}`}
-              className="border text-white border-gray-300 py-2 px-5 mr-4"
+              className="border text-white border-gray-300 py-2 px-3 md:px-5 mr-4 text-sm md:text-xl"
             >
               VUDU
             </a>
             <a
               href={`https://www.imdb.com/title/${movie?.imdb_id}`}
-              className="border text-white border-gray-300 py-2 px-5 mr-4"
+              className="border text-white border-gray-300 py-2 px-3 md:px-5 mr-4 text-sm md:text-xl"
             >
-              IMDB
+              IMDb
             </a>
           </div>
         </div>
