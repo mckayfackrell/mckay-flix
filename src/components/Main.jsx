@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import requests from "../Requests";
 
 const Main = () => {
@@ -22,9 +23,9 @@ const Main = () => {
     });
   }, []);
 
-  const toggleFullText = () => {
-    setShowFullText(!showFullText);
-  };
+  // const toggleFullText = () => {
+  //   setShowFullText(!showFullText);
+  // };
 
   const truncateString = (str, num) => {
     if (str?.length > num && !showFullText) {
@@ -46,24 +47,11 @@ const Main = () => {
         <div className="absolute w-full top-[20%] p-4 md:p-8">
           <h1 className="text-3xl md:text-5xl font-bold">{movie?.title}</h1>
           <div className="py-4">
-            <button className="border bg-gray-300 text-black border-gray-300 py-2 px-5">
-              Play
-            </button>
-            <button className="border text-white border-gray-300 py-2 px-5 ml-4">
-              Watch Later
-            </button>
-            <a
-              href={`https://www.google.com/search?q=${movie?.title}+apple+tv+movie`}
-              className="border text-white border-gray-300 py-2 px-5 ml-4"
-            >
-              Apple TV
-            </a>
-            <a
-              href={`https://www.vudu.com/content/movies/search?minVisible=0&returnUrl=%252Fcontent%252Fmovies%252Fhome&searchString=${movie?.title}`}
-              className="border text-white border-gray-300 py-2 px-5 ml-4"
-            >
-              VUDU
-            </a>
+            <Link to={`movie/${movie?.title}/${movie?.id}`}>
+              <button className="border bg-gray-300 text-black border-gray-300 py-2 px-5">
+                View More
+              </button>
+            </Link>
           </div>
           <p className="text-gray-400 text-sm">
             Released:{" "}
