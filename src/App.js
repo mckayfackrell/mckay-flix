@@ -9,6 +9,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import AdminMovie from "./pages/AdminMovie";
 import AdminTV from "./pages/AdminTV";
 import AllMovies from "./pages/AllMovies";
+import Movie from "./pages/Movie";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/all_movies" element={<AllMovies />} />
+          <Route path="movie/:title/:id" element={<Movie />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route
