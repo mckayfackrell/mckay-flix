@@ -3,14 +3,25 @@ import React, { useEffect, useState } from "react";
 import Movie from "./Movie";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
+// This is what is needed for lists
 const Row = ({ title, fetchURL, rowID }) => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     axios.get(fetchURL).then((response) => {
-      setMovies(response.data.results);
+      setMovies(response.data.items);
     });
   }, [fetchURL]);
+
+  // THIS IS WHAT IS NEEDED FOR UPCOMING
+  // const Row = ({ title, fetchURL, rowID }) => {
+  //   const [movies, setMovies] = useState([]);
+
+  //   useEffect(() => {
+  //     axios.get(fetchURL).then((response) => {
+  //       setMovies(response.data.results);
+  //     });
+  //   }, [fetchURL]);
 
   const slideLeft = () => {
     var slider = document.getElementById("slider" + rowID);

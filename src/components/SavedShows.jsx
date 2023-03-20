@@ -54,6 +54,7 @@ const SavedShows = () => {
               key={item.id}
               className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2"
             >
+              {/* TODO: Fix the image so when there is no image the aspect ratio is not messed up */}
               <img
                 className="w-full h-auto block"
                 src={`https://image.tmdb.org/t/p/w500/${item?.img}`}
