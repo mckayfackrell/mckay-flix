@@ -38,7 +38,7 @@ const Header = ({ item }) => {
       />
       <div className="absolute top-0 left-0 w-full h-full hover:bg-black/80 opacity-0 hover:opacity-100 text-white">
         <Link to={`movie/${item?.title}/${item?.id}`}>
-          <p className="white-space-normal text-xs md:text-sm font-bold flex justify-center items-center h-full text-center hover:cursor-pointer">
+          <p className="whitespace-pre-line text-xs md:text-sm font-bold flex justify-center items-center h-full text-center hover:cursor-pointer">
             {item?.title}
           </p>
         </Link>

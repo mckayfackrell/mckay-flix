@@ -84,19 +84,26 @@ const Movie = ({ item }) => {
             </a>
           </div>
         </div>
-        <div className="w-full text-gray-200 text-center md:text-lg lg:text-xl xl:text-2xl">
-          <h1>About</h1>
-          <p className="text-gray-400 text-base mt-4 mb-8 md:mb-16">
-            Released:{" "}
-            {new Date(movie?.release_date).toLocaleDateString("en-US", {
-              month: "long",
-              day: "numeric",
-              year: "numeric",
-            })}
-          </p>
-          <p>
-            {movie?.overview}
-          </p>
+        <div className="w-full text-gray-200 md:flex md:text-left md:text-lg lg:text-xl xl:text-2xl mx-auto px-4 md:px-8 lg:px-16 xl:px-32 mt-4 md:mt-8">
+          <img
+            className="w-1/3 md:w-1/5 h-auto object-cover md:mr-8 float-left mb-2 mr-4 md:mb-0"
+            src={`https://image.tmdb.org/t/p/original/${movie?.poster_path}`}
+            alt={movie?.title}
+          />
+          <div className="md:w-2/3">
+            <p className="text-gray-400 text-sm md:text-base mt-4 md:mt-0">
+              Released:{" "}
+              {new Date(movie?.release_date).toLocaleDateString("en-US", {
+                month: "long",
+                day: "numeric",
+                year: "numeric",
+              })}
+              <br />
+              Runtime: {movie?.runtime} minutes
+            </p>
+            <h2 className="text-xl font-bold mt-3 mb-3">{movie?.tagline}</h2>
+            <p className="">{movie?.overview}</p>
+          </div>
         </div>
       </div>
     </div>
