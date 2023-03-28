@@ -44,7 +44,7 @@ const Main = () => {
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
-        <div className="absolute w-full top-[20%] p-4 md:p-8">
+        <div className="absolute w-full top-[16%] p-4 md:p-8">
           <h1 className="text-xl md:text-5xl font-bold">{movie?.title}</h1>
           <div className="py-4">
             <Link to={`movie/${movie?.title}/${movie?.id}`}>

@@ -46,15 +46,15 @@ const Movie = ({ item }) => {
   }, [id]);
 
   return (
-    <div className="w-full h-[250px] md:h-[350px] text-white">
+    <div className="w-full h-[250px] md:h-[450px] text-white">
       <div className="w-full h-full">
-        <div className="absolute w-full h-[250px] md:h-[350px] bg-gradient-to-r from-black"></div>
+        <div className="absolute w-full h-[250px] md:h-[450px] bg-gradient-to-r from-black"></div>
         <img
           className="w-full h-full object-cover"
           src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
           alt={movie?.title}
         />
-        <div className="absolute w-full top-[10%] p-4 md:p-8">
+        <div className="absolute w-full top-[13%] p-4 md:p-8">
           <h1 className="text-xl md:text-5xl font-bold">{movie?.title}</h1>
           <div className="py-4 flex items-center">
             <p className="mr-4" onClick={saveShow}>
