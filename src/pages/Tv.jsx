@@ -111,9 +111,9 @@ const Tv = ({ item }) => {
                 ? `${tv.episode_run_time[0]} minutes`
                 : "N/A"}
             </p>
-
             <h2 className="text-xl font-bold mt-3 mb-3">{tv?.tagline}</h2>
             <p className="">{tv?.overview}</p>
+            {/* TODO: INCLUDE GENRES */}
           </div>
         </div>
       </div>

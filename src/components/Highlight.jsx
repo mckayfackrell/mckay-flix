@@ -26,6 +26,7 @@ const Highlight = () => {
     <div className="w-full h-[370px] md:h-[550px] text-white">
       <div className="w-full h-full">
         <div className="absolute w-full h-[370px] md:h-[550px] bg-gradient-to-r from-black"></div>
+        {/* TODO: GET EN VERSION OF BACKDROP PHOTO */}
         <img
           className="w-full h-full object-cover"
           src={`https://image.tmdb.org/t/p/original/${item?.backdrop_path}`}

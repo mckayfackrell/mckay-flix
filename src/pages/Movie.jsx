@@ -103,6 +103,7 @@ const Movie = ({ item }) => {
             </p>
             <h2 className="text-xl font-bold mt-3 mb-3">{movie?.tagline}</h2>
             <p className="">{movie?.overview}</p>
+            {/* TODO: INCLUDE GENRES */}
           </div>
         </div>
       </div>

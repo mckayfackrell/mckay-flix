@@ -2,9 +2,6 @@ import React from "react";
 import SavedShows from "../components/SavedShows";
 import moviesImage from "../assets/movies.png";
 
-//TODO: create an edit account page where the user can change password and username
-//TODO: create a favorite row and a watch later row that links in with the homepage title card
-
 const Account = () => {
   return (
     <>
