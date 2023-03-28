@@ -10,6 +10,7 @@ import AdminMovie from "./pages/AdminMovie";
 import AdminTV from "./pages/AdminTV";
 import AllMovies from "./pages/AllMovies";
 import Movie from "./pages/Movie";
+import Tv from "./pages/Tv";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/all_movies" element={<AllMovies />} />
           <Route path="movie/:title/:id" element={<Movie />} />
+          <Route path="tv/:title/:id" element={<Tv />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route

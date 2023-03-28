@@ -5,7 +5,7 @@ import { db } from "../firebase";
 import { arrayUnion, doc, updateDoc } from "firebase/firestore";
 import { Link } from "react-router-dom";
 
-const Header = ({ item }) => {
+const Cards = ({ item }) => {
   const [like, setLike] = useState(false);
   const [saved, setSaved] = useState(false);
   const { user } = UserAuth();
@@ -24,14 +24,13 @@ const Header = ({ item }) => {
         }),
       });
     } else {
-      alert("Please log in to save a movie");
+      alert("Please log in to save to watch later");
     }
   };
 
   return (
     <div className="w-[160px] sm:w-[200px] md:w-[240px] lg:w-[280px] inline-block cursor-pointer relative p-2">
       <img
-        // onClick={} go to a new landing page, MovieDetails.jsx, or the TMDB page??
         className="w-full h-auto block"
         src={`https://image.tmdb.org/t/p/w500${item?.backdrop_path}`}
         alt={item?.title}
@@ -49,6 +48,7 @@ const Header = ({ item }) => {
           </p>
         </Link>
         <p onClick={saveShow}>
+          {/* TODO: FIX IT FOR THE TV SHOW TO BE SAVED TOO */}
           {like ? (
             <HiClock className="absolute top-4 left-4 text-gray-300 text-2xl" />
           ) : (
@@ -60,4 +60,4 @@ const Header = ({ item }) => {
   );
 };
 
-export default Header;
+export default Cards;

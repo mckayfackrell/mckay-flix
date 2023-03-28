@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import Header from "./Header";
+import Cards from "./Cards";
 import { MdChevronLeft, MdChevronRight } from "react-icons/md";
 
 // This is what is needed for lists
@@ -46,7 +46,7 @@ const Row = ({ title, fetchURL, rowID }) => {
           className="w-full h-full overflow-x-scroll whitespace-nowrap scroll-smooth scrollbar-hide relative"
         >
           {movies.map((item, id) => (
-            <Header key={id} item={item} />
+            <Cards key={id} item={item} />
           ))}
         </div>
         <MdChevronRight

@@ -1,12 +1,12 @@
 import React from "react";
-import Main from "../components/Main";
+import Highlight from "../components/Highlight";
 import Row from "../components/Row";
 import requests from "../Requests";
 
 const Home = () => {
   return (
     <div>
-      <Main />
+      <Highlight />
       <Row
         rowID="1"
         title="McKay's Favorites"

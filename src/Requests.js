@@ -15,7 +15,7 @@ const requests = {
   requestPotter: `https://api.themoviedb.org/3/list/8245360?api_key=${key}&language=en-US`,
   requestNolan: `https://api.themoviedb.org/3/list/8245356?api_key=${key}&language=en-US`,
   requestGhibli: `https://api.themoviedb.org/3/list/8245355?api_key=${key}&language=en-US`,
- requestTV: `https://api.themoviedb.org/3/list/8245520?api_key=${key}&language=en-US`,
+  requestTV: `https://api.themoviedb.org/3/list/8245520?api_key=${key}&language=en-US`,
 };
 
 export default requests;
