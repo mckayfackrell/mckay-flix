@@ -16,6 +16,11 @@ const Cards = ({ item }) => {
     if (user?.email) {
       setLike(!like);
       setSaved(true);
+      // console.log("Saved!", {
+      //   id: item?.id,
+      //   title: item?.title,
+      //   img: item?.backdrop_path,
+      // });
       await updateDoc(movieID, {
         savedShows: arrayUnion({
           id: item.id,

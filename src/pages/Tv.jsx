@@ -21,15 +21,20 @@ const Tv = ({ item }) => {
     if (user?.email) {
       setLike(!like);
       setSaved(true);
+      // console.log("Saved!", {
+      //   id: tv?.id,
+      //   title: tv?.title,
+      //   img: tv?.backdrop_path,
+      // });
       await updateDoc(tvID, {
         savedShows: arrayUnion({
-          id: item.id,
-          title: item.name,
-          img: item.backdrop_path,
+          id: tv?.id,
+          title: tv?.title,
+          img: tv?.backdrop_path,
         }),
       });
     } else {
-      alert("Please log in to save a movie");
+      alert("Please log in to save to watch later");
     }
   };
 
