@@ -5,7 +5,7 @@ Users can access a comprehensive list of movies and TV series owned by McKay on 
 ## Images
 | Homepage | Sign In | Account |
 |---------|---------|---------|
-|![home](https://user-images.githubusercontent.com/110206514/228303608-d233a80b-735f-40ed-b477-1856b854a439.jpg)| ![signin](https://user-images.githubusercontent.com/110206514/228303824-dde13f72-90e8-4cb0-aac7-2cb9112bb9b4.jpg)|![account](https://user-images.githubusercontent.com/110206514/228303900-5f57ad93-6999-4dbe-b723-3407b3c079a8.jpg)|
+|![mckayflix](https://user-images.githubusercontent.com/110206514/228948626-7476e5f4-ed3e-4371-b909-cea23cfb31b7.jpg)| ![signin](https://user-images.githubusercontent.com/110206514/228303824-dde13f72-90e8-4cb0-aac7-2cb9112bb9b4.jpg)|![account](https://user-images.githubusercontent.com/110206514/228303900-5f57ad93-6999-4dbe-b723-3407b3c079a8.jpg)|
 
 ## Usage
 Anyone can access the website via the url: https://mckay-flix.web.app
